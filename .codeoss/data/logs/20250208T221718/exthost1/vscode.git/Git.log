@@ -1,0 +1,704 @@
+2025-02-08 22:17:44.320 [info] [main] Log level: Info
+2025-02-08 22:17:44.320 [info] [main] Validating found git in: "git"
+2025-02-08 22:17:44.320 [info] [main] Using git "2.43.0" from "git"
+2025-02-08 22:17:44.320 [info] [Model][doInitialScan] Initial repository scan started
+2025-02-08 22:17:44.320 [info] > git rev-parse --show-toplevel [5ms]
+2025-02-08 22:17:44.320 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-02-08 22:17:44.320 [info] > git rev-parse --show-toplevel [2ms]
+2025-02-08 22:17:44.320 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-02-08 22:17:44.320 [info] > git rev-parse --show-toplevel [2ms]
+2025-02-08 22:17:44.320 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-02-08 22:17:44.320 [info] > git rev-parse --show-toplevel [2ms]
+2025-02-08 22:17:44.320 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-02-08 22:17:44.320 [info] > git rev-parse --show-toplevel [1ms]
+2025-02-08 22:17:44.320 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-02-08 22:17:44.320 [info] > git rev-parse --show-toplevel [1ms]
+2025-02-08 22:17:44.320 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-02-08 22:17:44.320 [info] > git rev-parse --show-toplevel [2ms]
+2025-02-08 22:17:44.320 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-02-08 22:17:44.320 [info] > git rev-parse --show-toplevel [2ms]
+2025-02-08 22:17:44.320 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-02-08 22:17:44.320 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-02-08 22:17:49.863 [info] > git rev-parse --show-toplevel [28ms]
+2025-02-08 22:17:49.863 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-02-08 22:50:31.715 [info] > git init -b main [25ms]
+2025-02-08 22:50:31.723 [info] > git rev-parse --show-toplevel [2ms]
+2025-02-08 22:50:31.732 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2025-02-08 22:50:31.745 [info] [Model][openRepository] Opened repository: /home/student_01_21a5da70f43d
+2025-02-08 22:50:31.762 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:50:31.763 [info] > git config --get commit.template [9ms]
+2025-02-08 22:50:31.766 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [6ms]
+2025-02-08 22:50:31.766 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:50:31.782 [info] > git status -z -uall [9ms]
+2025-02-08 22:50:31.784 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-02-08 22:50:31.810 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [10ms]
+2025-02-08 22:50:31.811 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:50:31.812 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for main: Error: No such branch: main.
+2025-02-08 22:50:31.814 [info] > git config --get commit.template [3ms]
+2025-02-08 22:50:31.819 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:50:31.822 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-02-08 22:50:31.822 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:50:31.835 [info] > git status -z -uall [7ms]
+2025-02-08 22:50:31.837 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:50:32.215 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [29ms]
+2025-02-08 22:50:32.215 [info] fatal: bad revision 'refs/heads/main'
+2025-02-08 22:50:32.216 [error] [GitHistoryProvider][provideHistoryItems] Failed to get history items with options '{"historyItemRefs":["refs/heads/main"],"limit":50,"skip":0}': Failed to execute git {
+  "exitCode": 128,
+  "gitCommand": "log",
+  "stdout": "",
+  "stderr": "fatal: bad revision 'refs/heads/main'\n"
+}
+2025-02-08 22:50:32.679 [info] > git check-ignore -v -z --stdin [2ms]
+2025-02-08 22:50:32.976 [info] > git show --textconv :main.tf [8ms]
+2025-02-08 22:50:32.978 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/main.tf [4ms]
+2025-02-08 22:50:33.473 [info] > git check-ignore -v -z --stdin [7ms]
+2025-02-08 22:50:33.475 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/main.tf [3ms]
+2025-02-08 22:50:33.645 [info] > git show --textconv :main.tf [2ms]
+2025-02-08 22:50:37.383 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:50:37.384 [info] > git config --get commit.template [9ms]
+2025-02-08 22:50:37.385 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-02-08 22:50:37.385 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:50:37.399 [info] > git status -z -uall [9ms]
+2025-02-08 22:50:37.400 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:50:42.412 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:50:42.418 [info] > git config --get commit.template [8ms]
+2025-02-08 22:50:42.419 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:50:42.420 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:50:42.436 [info] > git status -z -uall [10ms]
+2025-02-08 22:50:42.437 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-02-08 22:50:46.170 [info] > git add -A -- . [1684ms]
+2025-02-08 22:50:46.189 [info] > git -c user.useConfigOnly=true commit --quiet [12ms]
+2025-02-08 22:50:46.189 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2025-02-08 22:50:46.196 [info] > git config --get-all user.name [2ms]
+2025-02-08 22:50:46.209 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:50:46.210 [info] > git config --get commit.template [7ms]
+2025-02-08 22:50:46.211 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:50:46.211 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:50:46.226 [info] > git status -z -uall [8ms]
+2025-02-08 22:50:46.228 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-02-08 22:50:47.451 [info] > git config --get commit.template [4ms]
+2025-02-08 22:50:47.457 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:50:47.459 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:50:47.460 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:50:47.474 [info] > git status -z -uall [8ms]
+2025-02-08 22:50:47.475 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 22:50:47.800 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/main.tf [3ms]
+2025-02-08 22:50:47.808 [info] > git cat-file -s 0a45114007d6ab8e236f56f1f47a5c84b3c17a70 [2ms]
+2025-02-08 22:50:47.987 [info] > git show --textconv :main.tf [2ms]
+2025-02-08 22:50:52.490 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:50:52.491 [info] > git config --get commit.template [7ms]
+2025-02-08 22:50:52.492 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:50:52.492 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:50:52.504 [info] > git status -z -uall [7ms]
+2025-02-08 22:50:52.506 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:50:57.524 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:50:57.525 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-02-08 22:50:57.525 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:50:57.525 [info] > git config --get commit.template [10ms]
+2025-02-08 22:50:57.540 [info] > git status -z -uall [9ms]
+2025-02-08 22:50:57.541 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:51:02.557 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:51:02.557 [info] > git config --get commit.template [7ms]
+2025-02-08 22:51:02.558 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:51:02.559 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:51:02.572 [info] > git status -z -uall [8ms]
+2025-02-08 22:51:02.573 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:51:07.597 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:51:07.598 [info] > git config --get commit.template [11ms]
+2025-02-08 22:51:07.601 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2025-02-08 22:51:07.601 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:51:07.615 [info] > git status -z -uall [8ms]
+2025-02-08 22:51:07.619 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [5ms]
+2025-02-08 22:51:12.636 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:51:12.638 [info] > git config --get commit.template [7ms]
+2025-02-08 22:51:12.638 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:51:12.638 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:51:12.660 [info] > git status -z -uall [14ms]
+2025-02-08 22:51:12.664 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [6ms]
+2025-02-08 22:51:17.681 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:51:17.683 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:51:17.683 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:51:17.684 [info] > git config --get commit.template [9ms]
+2025-02-08 22:51:17.701 [info] > git status -z -uall [11ms]
+2025-02-08 22:51:17.701 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:51:22.715 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:51:22.724 [info] > git config --get commit.template [10ms]
+2025-02-08 22:51:22.727 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2025-02-08 22:51:22.728 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:51:22.744 [info] > git status -z -uall [9ms]
+2025-02-08 22:51:22.749 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [5ms]
+2025-02-08 22:51:27.765 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:51:27.766 [info] > git config --get commit.template [8ms]
+2025-02-08 22:51:27.767 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:51:27.767 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:51:27.783 [info] > git status -z -uall [10ms]
+2025-02-08 22:51:27.784 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:51:32.796 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:51:32.803 [info] > git config --get commit.template [7ms]
+2025-02-08 22:51:32.804 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:51:32.804 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:51:32.817 [info] > git status -z -uall [8ms]
+2025-02-08 22:51:32.818 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 22:51:37.834 [info] > git config --get commit.template [3ms]
+2025-02-08 22:51:37.840 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:51:37.842 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:51:37.843 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:51:37.856 [info] > git status -z -uall [8ms]
+2025-02-08 22:51:37.857 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 22:51:42.874 [info] > git config --get commit.template [4ms]
+2025-02-08 22:51:42.891 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:51:42.895 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [7ms]
+2025-02-08 22:51:42.895 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:51:42.910 [info] > git status -z -uall [8ms]
+2025-02-08 22:51:42.911 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:52:33.421 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:52:33.421 [info] > git config --get commit.template [9ms]
+2025-02-08 22:52:33.423 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-02-08 22:52:33.424 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:52:33.437 [info] > git status -z -uall [8ms]
+2025-02-08 22:52:33.439 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:56:55.240 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:56:55.242 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-02-08 22:56:55.243 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:56:55.243 [info] > git config --get commit.template [10ms]
+2025-02-08 22:56:55.256 [info] > git status -z -uall [8ms]
+2025-02-08 22:56:55.258 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:57:00.274 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:57:00.275 [info] > git config --get commit.template [9ms]
+2025-02-08 22:57:00.276 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2025-02-08 22:57:00.276 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:57:00.290 [info] > git status -z -uall [8ms]
+2025-02-08 22:57:00.291 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:57:05.306 [info] > git config --get commit.template [3ms]
+2025-02-08 22:57:05.307 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:57:05.315 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-02-08 22:57:05.315 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:57:05.332 [info] > git status -z -uall [11ms]
+2025-02-08 22:57:05.342 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [11ms]
+2025-02-08 22:57:12.966 [info] > git config --get commit.template [1ms]
+2025-02-08 22:57:12.972 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:57:12.974 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:57:12.974 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:57:12.990 [info] > git status -z -uall [10ms]
+2025-02-08 22:57:12.992 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:57:18.010 [info] [Git][getRemotes] No remotes found in the git config file
+2025-02-08 22:57:18.011 [info] > git config --get commit.template [9ms]
+2025-02-08 22:57:18.012 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:57:18.012 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:57:18.024 [info] > git status -z -uall [7ms]
+2025-02-08 22:57:18.026 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 22:57:23.043 [info] > git config --get commit.template [8ms]
+2025-02-08 22:57:23.044 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:57:23.044 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:57:23.059 [info] > git status -z -uall [9ms]
+2025-02-08 22:57:23.061 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-02-08 22:57:23.659 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/main.tf [2ms]
+2025-02-08 22:57:23.667 [info] > git cat-file -s 0a45114007d6ab8e236f56f1f47a5c84b3c17a70 [2ms]
+2025-02-08 22:57:23.837 [info] > git show --textconv :main.tf [3ms]
+2025-02-08 22:57:28.079 [info] > git config --get commit.template [9ms]
+2025-02-08 22:57:28.080 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:57:28.080 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:57:28.094 [info] > git status -z -uall [8ms]
+2025-02-08 22:57:28.095 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 22:57:33.111 [info] > git config --get commit.template [7ms]
+2025-02-08 22:57:33.113 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-02-08 22:57:33.113 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:57:33.126 [info] > git status -z -uall [8ms]
+2025-02-08 22:57:33.128 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:57:38.145 [info] > git config --get commit.template [7ms]
+2025-02-08 22:57:38.146 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:57:38.146 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:57:38.159 [info] > git status -z -uall [8ms]
+2025-02-08 22:57:38.162 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:57:43.178 [info] > git config --get commit.template [7ms]
+2025-02-08 22:57:43.180 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:57:43.180 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:57:43.193 [info] > git status -z -uall [8ms]
+2025-02-08 22:57:43.195 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:57:48.213 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-02-08 22:57:48.213 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:57:48.214 [info] > git config --get commit.template [11ms]
+2025-02-08 22:57:48.230 [info] > git status -z -uall [10ms]
+2025-02-08 22:57:48.231 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-02-08 22:57:53.248 [info] > git config --get commit.template [7ms]
+2025-02-08 22:57:53.249 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:57:53.249 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:57:53.264 [info] > git status -z -uall [9ms]
+2025-02-08 22:57:53.265 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-02-08 22:57:58.282 [info] > git config --get commit.template [7ms]
+2025-02-08 22:57:58.283 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:57:58.283 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:57:58.296 [info] > git status -z -uall [8ms]
+2025-02-08 22:57:58.297 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 22:58:03.316 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:58:03.317 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:58:03.318 [info] > git config --get commit.template [11ms]
+2025-02-08 22:58:03.331 [info] > git status -z -uall [8ms]
+2025-02-08 22:58:03.332 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 22:58:08.349 [info] > git config --get commit.template [8ms]
+2025-02-08 22:58:08.350 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:58:08.350 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:58:08.363 [info] > git status -z -uall [7ms]
+2025-02-08 22:58:08.366 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:58:13.383 [info] > git config --get commit.template [8ms]
+2025-02-08 22:58:13.384 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:58:13.384 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:58:13.397 [info] > git status -z -uall [7ms]
+2025-02-08 22:58:13.398 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 22:58:18.410 [info] > git config --get commit.template [2ms]
+2025-02-08 22:58:18.417 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:58:18.417 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:58:18.431 [info] > git status -z -uall [8ms]
+2025-02-08 22:58:18.433 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:58:23.451 [info] > git config --get commit.template [8ms]
+2025-02-08 22:58:23.452 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:58:23.452 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:58:23.467 [info] > git status -z -uall [9ms]
+2025-02-08 22:58:23.468 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-02-08 22:58:28.484 [info] > git config --get commit.template [7ms]
+2025-02-08 22:58:28.485 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:58:28.486 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:58:28.499 [info] > git status -z -uall [8ms]
+2025-02-08 22:58:28.500 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 22:58:33.514 [info] > git config --get commit.template [3ms]
+2025-02-08 22:58:33.522 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:58:33.522 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:58:33.537 [info] > git status -z -uall [9ms]
+2025-02-08 22:58:33.537 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:58:38.553 [info] > git config --get commit.template [7ms]
+2025-02-08 22:58:38.554 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:58:38.554 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:58:38.569 [info] > git status -z -uall [10ms]
+2025-02-08 22:58:38.570 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-02-08 22:58:43.586 [info] > git config --get commit.template [8ms]
+2025-02-08 22:58:43.587 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:58:43.587 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:58:43.600 [info] > git status -z -uall [7ms]
+2025-02-08 22:58:43.602 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:58:48.619 [info] > git config --get commit.template [7ms]
+2025-02-08 22:58:48.621 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-02-08 22:58:48.621 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:58:48.635 [info] > git status -z -uall [8ms]
+2025-02-08 22:58:48.637 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:58:53.653 [info] > git config --get commit.template [7ms]
+2025-02-08 22:58:53.654 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:58:53.654 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:58:53.667 [info] > git status -z -uall [7ms]
+2025-02-08 22:58:53.669 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:58:58.689 [info] > git config --get commit.template [9ms]
+2025-02-08 22:58:58.689 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-02-08 22:58:58.690 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:58:58.703 [info] > git status -z -uall [7ms]
+2025-02-08 22:58:58.704 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 22:59:03.720 [info] > git config --get commit.template [7ms]
+2025-02-08 22:59:03.721 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:59:03.721 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:59:03.735 [info] > git status -z -uall [8ms]
+2025-02-08 22:59:03.738 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-02-08 22:59:08.754 [info] > git config --get commit.template [6ms]
+2025-02-08 22:59:08.755 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:59:08.755 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:59:08.768 [info] > git status -z -uall [7ms]
+2025-02-08 22:59:08.769 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 22:59:13.785 [info] > git config --get commit.template [7ms]
+2025-02-08 22:59:13.786 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:59:13.787 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:59:13.802 [info] > git status -z -uall [10ms]
+2025-02-08 22:59:13.803 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-02-08 22:59:18.602 [info] > git check-ignore -v -z --stdin [3ms]
+2025-02-08 22:59:18.819 [info] > git config --get commit.template [7ms]
+2025-02-08 22:59:18.820 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:59:18.820 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:59:18.835 [info] > git status -z -uall [9ms]
+2025-02-08 22:59:18.838 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [5ms]
+2025-02-08 22:59:19.484 [info] > git check-ignore -v -z --stdin [2ms]
+2025-02-08 22:59:21.153 [info] > git check-ignore -v -z --stdin [2ms]
+2025-02-08 22:59:22.595 [info] > git check-ignore -v -z --stdin [2ms]
+2025-02-08 22:59:23.850 [info] > git config --get commit.template [3ms]
+2025-02-08 22:59:23.859 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:59:23.860 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:59:23.874 [info] > git status -z -uall [9ms]
+2025-02-08 22:59:23.875 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:59:27.836 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [5ms]
+2025-02-08 22:59:27.836 [info] fatal: bad revision 'refs/heads/main'
+2025-02-08 22:59:27.836 [error] [GitHistoryProvider][provideHistoryItems] Failed to get history items with options '{"historyItemRefs":["refs/heads/main"],"limit":50,"skip":0}': Failed to execute git {
+  "exitCode": 128,
+  "gitCommand": "log",
+  "stdout": "",
+  "stderr": "fatal: bad revision 'refs/heads/main'\n"
+}
+2025-02-08 22:59:29.866 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:59:29.866 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:59:29.867 [info] > git config --get commit.template [9ms]
+2025-02-08 22:59:29.880 [info] > git status -z -uall [8ms]
+2025-02-08 22:59:29.881 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 22:59:30.341 [info] > git -c user.useConfigOnly=true commit --quiet [3ms]
+2025-02-08 22:59:30.341 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2025-02-08 22:59:30.350 [info] > git config --get-all user.name [2ms]
+2025-02-08 22:59:30.363 [info] > git config --get commit.template [6ms]
+2025-02-08 22:59:30.365 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:59:30.365 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:59:30.378 [info] > git status -z -uall [8ms]
+2025-02-08 22:59:30.380 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:59:31.952 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/main.tf [2ms]
+2025-02-08 22:59:31.959 [info] > git cat-file -s 0a45114007d6ab8e236f56f1f47a5c84b3c17a70 [2ms]
+2025-02-08 22:59:32.141 [info] > git show --textconv :main.tf [2ms]
+2025-02-08 22:59:34.897 [info] > git config --get commit.template [6ms]
+2025-02-08 22:59:34.898 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:59:34.898 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:59:34.912 [info] > git status -z -uall [7ms]
+2025-02-08 22:59:34.913 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 22:59:39.924 [info] > git config --get commit.template [1ms]
+2025-02-08 22:59:39.932 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:59:39.932 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:59:39.946 [info] > git status -z -uall [7ms]
+2025-02-08 22:59:39.948 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 22:59:44.965 [info] > git config --get commit.template [7ms]
+2025-02-08 22:59:44.966 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 22:59:44.967 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:59:44.979 [info] > git status -z -uall [7ms]
+2025-02-08 22:59:44.983 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-02-08 22:59:50.001 [info] > git config --get commit.template [10ms]
+2025-02-08 22:59:50.003 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2025-02-08 22:59:50.003 [warning] [Git][getBranch] No such branch: main
+2025-02-08 22:59:50.015 [info] > git status -z -uall [7ms]
+2025-02-08 22:59:50.017 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 23:00:07.753 [info] > git config --get commit.template [7ms]
+2025-02-08 23:00:07.754 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:00:07.754 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:00:07.767 [info] > git status -z -uall [7ms]
+2025-02-08 23:00:07.769 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 23:00:08.423 [info] > git -c user.useConfigOnly=true commit --quiet [4ms]
+2025-02-08 23:00:08.423 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2025-02-08 23:00:08.431 [info] > git config --get-all user.name [3ms]
+2025-02-08 23:00:08.443 [info] > git config --get commit.template [6ms]
+2025-02-08 23:00:08.445 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:00:08.445 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:00:08.458 [info] > git status -z -uall [8ms]
+2025-02-08 23:00:08.460 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 23:00:10.031 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/main.tf [1ms]
+2025-02-08 23:00:10.040 [info] > git cat-file -s 0a45114007d6ab8e236f56f1f47a5c84b3c17a70 [3ms]
+2025-02-08 23:00:10.209 [info] > git show --textconv :main.tf [3ms]
+2025-02-08 23:00:12.784 [info] > git config --get commit.template [7ms]
+2025-02-08 23:00:12.786 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:00:12.786 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:00:12.799 [info] > git status -z -uall [8ms]
+2025-02-08 23:00:12.801 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 23:00:17.812 [info] > git config --get commit.template [3ms]
+2025-02-08 23:00:17.820 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:00:17.820 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:00:17.833 [info] > git status -z -uall [7ms]
+2025-02-08 23:00:17.835 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 23:00:22.857 [info] > git config --get commit.template [10ms]
+2025-02-08 23:00:22.861 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2025-02-08 23:00:22.861 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:00:22.889 [info] > git status -z -uall [16ms]
+2025-02-08 23:00:22.889 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [6ms]
+2025-02-08 23:00:27.909 [info] > git config --get commit.template [8ms]
+2025-02-08 23:00:27.910 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:00:27.911 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:00:27.927 [info] > git status -z -uall [11ms]
+2025-02-08 23:00:27.928 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 23:00:32.945 [info] > git config --get commit.template [7ms]
+2025-02-08 23:00:32.948 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2025-02-08 23:00:32.948 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:00:32.963 [info] > git status -z -uall [9ms]
+2025-02-08 23:00:32.964 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 23:00:37.982 [info] > git config --get commit.template [9ms]
+2025-02-08 23:00:37.983 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-02-08 23:00:37.984 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:00:37.997 [info] > git status -z -uall [8ms]
+2025-02-08 23:00:37.998 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 23:00:38.823 [info] > git show --textconv HEAD:.profile [21ms]
+2025-02-08 23:00:38.823 [info] > git show --textconv :.profile [15ms]
+2025-02-08 23:00:38.824 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/.profile [9ms]
+2025-02-08 23:00:38.824 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:00:38.825 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/.profile [4ms]
+2025-02-08 23:00:38.834 [info] > git cat-file -s d89ea5a6e83a2956d7461b547fa0d7d68103b9c9 [2ms]
+2025-02-08 23:00:39.332 [info] > git check-ignore -v -z --stdin [1ms]
+2025-02-08 23:00:43.014 [info] > git config --get commit.template [7ms]
+2025-02-08 23:00:43.015 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:00:43.016 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:00:43.029 [info] > git status -z -uall [8ms]
+2025-02-08 23:00:43.030 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 23:00:44.977 [info] > git show --textconv HEAD:.bash_history [20ms]
+2025-02-08 23:00:44.977 [info] > git show --textconv :.bash_history [14ms]
+2025-02-08 23:00:44.977 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/.bash_history [8ms]
+2025-02-08 23:00:44.977 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:00:44.979 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/.bash_history [4ms]
+2025-02-08 23:00:44.986 [info] > git cat-file -s dc53b1c3747ad4fb8adb87d2142673b3c548460a [2ms]
+2025-02-08 23:00:45.459 [info] > git check-ignore -v -z --stdin [2ms]
+2025-02-08 23:00:47.933 [info] > git show --textconv HEAD:.bash_logout [23ms]
+2025-02-08 23:00:47.933 [info] > git show --textconv :.bash_logout [17ms]
+2025-02-08 23:00:47.934 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/.bash_logout [10ms]
+2025-02-08 23:00:47.934 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:00:47.935 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/.bash_logout [5ms]
+2025-02-08 23:00:47.943 [info] > git cat-file -s de4f5f75d7ccd3a5b62bd2ce683ed678a5cb72c2 [2ms]
+2025-02-08 23:00:48.046 [info] > git config --get commit.template [7ms]
+2025-02-08 23:00:48.047 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:00:48.048 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:00:48.063 [info] > git status -z -uall [10ms]
+2025-02-08 23:00:48.064 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-02-08 23:00:48.440 [info] > git check-ignore -v -z --stdin [2ms]
+2025-02-08 23:00:50.243 [info] > git show --textconv HEAD:.bashrc [20ms]
+2025-02-08 23:00:50.243 [info] > git show --textconv :.bashrc [15ms]
+2025-02-08 23:00:50.243 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/.bashrc [9ms]
+2025-02-08 23:00:50.243 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:00:50.245 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/.bashrc [5ms]
+2025-02-08 23:00:50.255 [info] > git cat-file -s bbbb39ba452bbb5c80b0102c4201b48243aa4c6d [2ms]
+2025-02-08 23:00:50.726 [info] > git check-ignore -v -z --stdin [2ms]
+2025-02-08 23:00:53.080 [info] > git config --get commit.template [7ms]
+2025-02-08 23:00:53.081 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:00:53.082 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:00:53.094 [info] > git status -z -uall [7ms]
+2025-02-08 23:00:53.096 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 23:00:55.824 [info] > git show --textconv HEAD:.sudo_as_admin_successful [23ms]
+2025-02-08 23:00:55.825 [info] > git show --textconv :.sudo_as_admin_successful [18ms]
+2025-02-08 23:00:55.825 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/.sudo_as_admin_successful [6ms]
+2025-02-08 23:00:55.831 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/.sudo_as_admin_successful [18ms]
+2025-02-08 23:00:55.832 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:00:55.834 [info] > git cat-file -s e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 [3ms]
+2025-02-08 23:00:56.299 [info] > git check-ignore -v -z --stdin [2ms]
+2025-02-08 23:00:57.582 [info] > git show --textconv HEAD:.terraform.lock.hcl [20ms]
+2025-02-08 23:00:57.582 [info] > git show --textconv :.terraform.lock.hcl [13ms]
+2025-02-08 23:00:57.583 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/.terraform.lock.hcl [7ms]
+2025-02-08 23:00:57.583 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:00:57.584 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/.terraform.lock.hcl [4ms]
+2025-02-08 23:00:57.591 [info] > git cat-file -s efe30d69eb65ccb1b462697ab1def834a10e3596 [2ms]
+2025-02-08 23:00:58.065 [info] > git check-ignore -v -z --stdin [3ms]
+2025-02-08 23:00:58.112 [info] > git config --get commit.template [7ms]
+2025-02-08 23:00:58.113 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:00:58.113 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:00:58.126 [info] > git status -z -uall [7ms]
+2025-02-08 23:00:58.127 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 23:01:02.314 [info] > git show --textconv HEAD:README-cloudshell.txt [23ms]
+2025-02-08 23:01:02.314 [info] > git show --textconv :README-cloudshell.txt [16ms]
+2025-02-08 23:01:02.315 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/README-cloudshell.txt [11ms]
+2025-02-08 23:01:02.315 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:01:02.316 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/README-cloudshell.txt [4ms]
+2025-02-08 23:01:02.324 [info] > git cat-file -s 9fa5a74e750d98eb725eca4ca09ba01af2f5cd24 [2ms]
+2025-02-08 23:01:02.793 [info] > git check-ignore -v -z --stdin [2ms]
+2025-02-08 23:01:03.145 [info] > git config --get commit.template [8ms]
+2025-02-08 23:01:03.146 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:01:03.146 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:01:03.160 [info] > git status -z -uall [9ms]
+2025-02-08 23:01:03.161 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 23:01:03.953 [info] > git show --textconv HEAD:static_ip [23ms]
+2025-02-08 23:01:03.953 [info] > git show --textconv :static_ip [15ms]
+2025-02-08 23:01:03.953 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/static_ip [8ms]
+2025-02-08 23:01:03.953 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:01:03.955 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/static_ip [4ms]
+2025-02-08 23:01:03.963 [info] > git cat-file -s 9a10fabfb18164a8afec9f6ff4b3880be9331df8 [2ms]
+2025-02-08 23:01:04.138 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/static_ip [2ms]
+2025-02-08 23:01:04.146 [info] > git cat-file -s 9a10fabfb18164a8afec9f6ff4b3880be9331df8 [2ms]
+2025-02-08 23:01:04.344 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/static_ip [7ms]
+2025-02-08 23:01:04.345 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:01:04.346 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/static_ip [3ms]
+2025-02-08 23:01:04.353 [info] > git cat-file -s 9a10fabfb18164a8afec9f6ff4b3880be9331df8 [2ms]
+2025-02-08 23:01:04.461 [info] > git check-ignore -v -z --stdin [2ms]
+2025-02-08 23:01:07.981 [info] > git show --textconv HEAD:terraform.tfstate [20ms]
+2025-02-08 23:01:07.981 [info] > git show --textconv :terraform.tfstate [15ms]
+2025-02-08 23:01:07.981 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/terraform.tfstate [9ms]
+2025-02-08 23:01:07.981 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:01:07.983 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/terraform.tfstate [5ms]
+2025-02-08 23:01:07.991 [info] > git cat-file -s 1d00a485703efd995c893aec08af282276b123cd [2ms]
+2025-02-08 23:01:08.174 [info] > git config --get commit.template [3ms]
+2025-02-08 23:01:08.182 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:01:08.182 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:01:08.197 [info] > git status -z -uall [9ms]
+2025-02-08 23:01:08.198 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 23:01:08.461 [info] > git check-ignore -v -z --stdin [2ms]
+2025-02-08 23:01:13.215 [info] > git config --get commit.template [7ms]
+2025-02-08 23:01:13.216 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:01:13.216 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:01:13.229 [info] > git status -z -uall [8ms]
+2025-02-08 23:01:13.232 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-02-08 23:01:18.247 [info] > git config --get commit.template [7ms]
+2025-02-08 23:01:18.248 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:01:18.248 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:01:18.261 [info] > git status -z -uall [7ms]
+2025-02-08 23:01:18.263 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 23:01:23.279 [info] > git config --get commit.template [8ms]
+2025-02-08 23:01:23.282 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2025-02-08 23:01:23.282 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:01:23.298 [info] > git status -z -uall [9ms]
+2025-02-08 23:01:23.302 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [5ms]
+2025-02-08 23:01:28.320 [info] > git config --get commit.template [7ms]
+2025-02-08 23:01:28.321 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:01:28.321 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:01:28.334 [info] > git status -z -uall [7ms]
+2025-02-08 23:01:28.335 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 23:02:00.431 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/terraform.tfstate [15ms]
+2025-02-08 23:02:00.431 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:02:00.433 [info] > git config --get commit.template [2ms]
+2025-02-08 23:02:00.433 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/terraform.tfstate [11ms]
+2025-02-08 23:02:00.444 [info] > git cat-file -s 1d00a485703efd995c893aec08af282276b123cd [6ms]
+2025-02-08 23:02:00.446 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-02-08 23:02:00.446 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:02:00.460 [info] > git status -z -uall [9ms]
+2025-02-08 23:02:00.461 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-02-08 23:02:05.894 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/terraform.tfstate [10ms]
+2025-02-08 23:02:05.900 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/terraform.tfstate [21ms]
+2025-02-08 23:02:05.900 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:02:05.901 [info] > git config --get commit.template [10ms]
+2025-02-08 23:02:05.902 [info] > git cat-file -s 1d00a485703efd995c893aec08af282276b123cd [3ms]
+2025-02-08 23:02:05.911 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:02:05.911 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:02:05.923 [info] > git status -z -uall [7ms]
+2025-02-08 23:02:05.925 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 23:02:06.069 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/terraform.tfstate [7ms]
+2025-02-08 23:02:06.069 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:02:06.078 [info] > git show --textconv HEAD:terraform.tfstate [3ms]
+2025-02-08 23:02:06.078 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/terraform.tfstate [11ms]
+2025-02-08 23:02:06.094 [info] > git show --textconv :terraform.tfstate [4ms]
+2025-02-08 23:02:06.094 [info] > git cat-file -s 1d00a485703efd995c893aec08af282276b123cd [11ms]
+2025-02-08 23:02:06.265 [info] > git show --textconv HEAD:terraform.tfstate [7ms]
+2025-02-08 23:02:06.267 [info] > git show --textconv :terraform.tfstate [3ms]
+2025-02-08 23:02:07.959 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/terraform.tfstate [9ms]
+2025-02-08 23:02:07.960 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:02:07.960 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/terraform.tfstate [4ms]
+2025-02-08 23:02:07.967 [info] > git cat-file -s 1d00a485703efd995c893aec08af282276b123cd [2ms]
+2025-02-08 23:02:12.352 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/terraform.tfstate [10ms]
+2025-02-08 23:02:12.358 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/terraform.tfstate [22ms]
+2025-02-08 23:02:12.358 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:02:12.359 [info] > git config --get commit.template [8ms]
+2025-02-08 23:02:12.360 [info] > git cat-file -s 1d00a485703efd995c893aec08af282276b123cd [3ms]
+2025-02-08 23:02:12.368 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:02:12.368 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:02:12.382 [info] > git status -z -uall [7ms]
+2025-02-08 23:02:12.383 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 23:02:16.450 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/terraform.tfstate [7ms]
+2025-02-08 23:02:16.450 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:02:16.451 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/terraform.tfstate [3ms]
+2025-02-08 23:02:16.459 [info] > git cat-file -s 1d00a485703efd995c893aec08af282276b123cd [3ms]
+2025-02-08 23:02:16.634 [info] > git show --textconv HEAD:terraform.tfstate [8ms]
+2025-02-08 23:02:16.636 [info] > git show --textconv :terraform.tfstate [3ms]
+2025-02-08 23:02:17.399 [info] > git config --get commit.template [7ms]
+2025-02-08 23:02:17.401 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-02-08 23:02:17.401 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:02:17.415 [info] > git status -z -uall [9ms]
+2025-02-08 23:02:17.416 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 23:02:22.433 [info] > git config --get commit.template [8ms]
+2025-02-08 23:02:22.434 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:02:22.434 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:02:22.450 [info] > git status -z -uall [8ms]
+2025-02-08 23:02:22.453 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-02-08 23:02:27.470 [info] > git config --get commit.template [7ms]
+2025-02-08 23:02:27.471 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:02:27.471 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:02:27.485 [info] > git status -z -uall [9ms]
+2025-02-08 23:02:27.486 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 23:02:29.200 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/terraform.tfstate [8ms]
+2025-02-08 23:02:29.200 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:02:29.201 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/terraform.tfstate [3ms]
+2025-02-08 23:02:29.208 [info] > git cat-file -s 1d00a485703efd995c893aec08af282276b123cd [2ms]
+2025-02-08 23:02:32.498 [info] > git config --get commit.template [3ms]
+2025-02-08 23:02:32.505 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:02:32.505 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:02:32.518 [info] > git status -z -uall [7ms]
+2025-02-08 23:02:32.520 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 23:02:33.106 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/terraform.tfstate [10ms]
+2025-02-08 23:02:33.106 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:02:33.107 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/terraform.tfstate [4ms]
+2025-02-08 23:02:33.115 [info] > git cat-file -s 1d00a485703efd995c893aec08af282276b123cd [2ms]
+2025-02-08 23:02:37.533 [info] > git config --get commit.template [2ms]
+2025-02-08 23:02:37.540 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:02:37.540 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:02:37.554 [info] > git status -z -uall [8ms]
+2025-02-08 23:02:37.556 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 23:02:45.867 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/terraform.tfstate [10ms]
+2025-02-08 23:02:45.872 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/terraform.tfstate [21ms]
+2025-02-08 23:02:45.872 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:02:45.874 [info] > git config --get commit.template [9ms]
+2025-02-08 23:02:45.874 [info] > git cat-file -s 1d00a485703efd995c893aec08af282276b123cd [2ms]
+2025-02-08 23:02:45.881 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:02:45.881 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:02:45.894 [info] > git status -z -uall [8ms]
+2025-02-08 23:02:45.895 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 23:02:50.912 [info] > git config --get commit.template [7ms]
+2025-02-08 23:02:50.913 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:02:50.914 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:02:50.927 [info] > git status -z -uall [8ms]
+2025-02-08 23:02:50.928 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 23:02:55.048 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/terraform.tfstate [10ms]
+2025-02-08 23:02:55.049 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:02:55.049 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/terraform.tfstate [4ms]
+2025-02-08 23:02:55.057 [info] > git cat-file -s 1d00a485703efd995c893aec08af282276b123cd [2ms]
+2025-02-08 23:02:55.944 [info] > git config --get commit.template [7ms]
+2025-02-08 23:02:55.945 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:02:55.945 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:02:55.958 [info] > git status -z -uall [7ms]
+2025-02-08 23:02:55.960 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 23:03:00.972 [info] > git config --get commit.template [3ms]
+2025-02-08 23:03:00.980 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:03:00.980 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:03:00.994 [info] > git status -z -uall [8ms]
+2025-02-08 23:03:00.996 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-08 23:03:19.347 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/terraform.tfstate [9ms]
+2025-02-08 23:03:19.352 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/terraform.tfstate [21ms]
+2025-02-08 23:03:19.353 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:03:19.354 [info] > git config --get commit.template [8ms]
+2025-02-08 23:03:19.360 [info] > git cat-file -s 1d00a485703efd995c893aec08af282276b123cd [8ms]
+2025-02-08 23:03:19.362 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:03:19.362 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:03:19.376 [info] > git status -z -uall [9ms]
+2025-02-08 23:03:19.377 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-02-08 23:03:24.394 [info] > git config --get commit.template [8ms]
+2025-02-08 23:03:24.395 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:03:24.395 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:03:24.408 [info] > git status -z -uall [8ms]
+2025-02-08 23:03:24.409 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-08 23:03:30.335 [info] > git ls-files --stage -- /home/student_01_21a5da70f43d/terraform.tfstate [11ms]
+2025-02-08 23:03:30.341 [info] > git ls-tree -l HEAD -- /home/student_01_21a5da70f43d/terraform.tfstate [23ms]
+2025-02-08 23:03:30.341 [info] fatal: Not a valid object name HEAD
+2025-02-08 23:03:30.343 [info] > git config --get commit.template [9ms]
+2025-02-08 23:03:30.353 [info] > git cat-file -s 1d00a485703efd995c893aec08af282276b123cd [12ms]
+2025-02-08 23:03:30.354 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-02-08 23:03:30.354 [warning] [Git][getBranch] No such branch: main
+2025-02-08 23:03:30.368 [info] > git status -z -uall [8ms]
+2025-02-08 23:03:30.369 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
